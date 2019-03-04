@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports",
                 "json:target/cucumber.json",
                 "rerun:target/rerun.txt"},
-        features = "src/test/resources/features",
-        glue = "com/briteerp/steps",
+        features = {"src/test/resources/features"},
+        glue = "com/briteerp/step_definitions",
         dryRun = false,
         tags = "@wip")
 

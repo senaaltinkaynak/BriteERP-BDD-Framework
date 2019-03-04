@@ -1,16 +1,17 @@
-package com.briteerp.steps.orders;
+package com.briteerp.step_definitions.orders;
 
-import com.briteerp.utilities.ConfigurationReader;
-import com.briteerp.utilities.Driver;
+import com.briteerp.utilities.BrowserUtils;
 import com.briteerp.utilities.Pages;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 
 public class EditOrderStepDefinitions {
 
     Pages pages = new Pages();
+    String customerSelected;
 
     @When("User should clicks on {string} link")
     public void user_should_clicks_on_link(String link) {
@@ -53,5 +54,26 @@ public class EditOrderStepDefinitions {
     @When("User should display the final value {string}")
     public void user_should_display_the_final_value(String guestNumber) {
         Assert.assertEquals(pages.ordersUnderOrdersPage().editValue.getText(),guestNumber);
+    }
+
+
+    @Then("User should clicks on {string} dropdown")
+    public void user_should_clicks_on_dropdown(String dropdown) {
+        //if(dropdown.equals("Customer")){
+
+        pages.ordersUnderOrdersPage().customerValue.click();
+        //}
+    }
+
+    @Then("User should select a customer from dropdown with {string}")
+    public void user_should_select_a_customer_from_dropdown_with(String i) {
+        customerSelected = pages.ordersUnderOrdersPage().selectCustomer(i).getText();
+        pages.ordersUnderOrdersPage().selectCustomer(i).click();
+    }
+
+    @When("User should display the {string}th customer information")
+    public void user_should_display_the_th_customer_information(String i) {
+        Assert.assertEquals(pages.ordersUnderOrdersPage().customerDisplay.getText(),
+                customerSelected);
     }
 }

@@ -1,4 +1,4 @@
-package com.briteerp.steps.login;
+package com.briteerp.step_definitions.login;
 
 import com.briteerp.utilities.ConfigurationReader;
 import com.briteerp.utilities.Driver;

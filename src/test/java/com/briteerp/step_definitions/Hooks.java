@@ -1,7 +1,6 @@
-package com.briteerp.steps;
+package com.briteerp.step_definitions;
 
 import com.briteerp.utilities.Driver;
-import com.briteerp.utilities.Pages;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;

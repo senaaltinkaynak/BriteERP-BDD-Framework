@@ -16,7 +16,6 @@ import java.util.concurrent.TimeUnit;
 
 public class OrdersUnderOrdersPage {
 
-
     public OrdersUnderOrdersPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
@@ -45,7 +44,6 @@ public class OrdersUnderOrdersPage {
     @FindBy(xpath = "//tbody[@class='ui-sortable']/tr")
     public List<WebElement> ordersEdit;
 
-
     @FindBy(xpath ="//input[@class='o_field_integer o_field_number o_field_widget o_input']")
     public  WebElement guestElement;
 
@@ -54,6 +52,16 @@ public class OrdersUnderOrdersPage {
 
     @FindBy(css = ".o_field_integer.o_field_number.o_field_widget")
     public  WebElement editValue;
+
+    @FindBy(xpath = "//div[@name='partner_id']//input[@class='o_input ui-autocomplete-input']")
+    public  WebElement customerValue;
+
+    @FindBy(xpath = "//a[@class='o_form_uri o_field_widget' and @name='partner_id']")
+    public  WebElement customerDisplay;
+
+
+    @FindBy(xpath = "//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li[@class='ui-menu-item']")
+    public  List<WebElement>  customerTable;
 
 
     public WebElement selectOrder(int i){
@@ -68,6 +76,11 @@ public class OrdersUnderOrdersPage {
     public void enterInputToGuests(String testValue){
         guestElement.clear();
         guestElement.sendKeys(testValue);
+    }
+
+    public WebElement selectCustomer(String i){
+        List<WebElement> customers = customerTable;
+        return customers.get(Integer.parseInt(i));
     }
 
 }
