@@ -29,13 +29,13 @@ public class OrdersUnderOrdersPage {
     @FindBy(linkText = "Add an item")
     public WebElement addElement;
 
-    @FindBy(xpath = "//div[@class='o_field_widget o_field_many2one o_required_modifier']//input[@class='o_input ui-autocomplete-input']")
+    @FindBy(xpath = "//div[contains(@class,'o_field_widget o_field_many2one o_required_modifier')]//input[@class='o_input ui-autocomplete-input']")
     public WebElement productAdd;
 
     @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_save']")
     public WebElement saveElement;
 
-    @FindBy(xpath = "//td[@class='o_data_cell o_required_modifier']")
+    @FindBy(xpath = "//tr[@class='o_data_row']//td[1]")
     public List<WebElement> products;
 
     @FindBy(xpath = "//button[@class='fa fa-trash-o o_list_record_delete_btn']")

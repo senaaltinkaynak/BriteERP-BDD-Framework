@@ -4,17 +4,12 @@
     <list default="true" id="e95acfda-ada8-4fc6-a09c-a642294d168d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/pages/OrdersUnderOrdersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/pages/OrdersUnderOrdersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/steps/login/LoginStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/login/LoginStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/steps/orders/EditOrderStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/orders/EditOrderStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/orders/EditOrderStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/orders/EditOrderStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/editOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/editOrder.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briteerp/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/briteerp/runners/CukesRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briteerp/steps/Hooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briteerp/steps/login/LoginStepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briteerp/steps/orders/EditOrderStepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briteerp/pages/OrdersUnderOrdersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/briteerp/pages/OrdersUnderOrdersPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/editOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/editOrder.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,11 +25,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/editOrder.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="60">
+              <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/Hooks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/pages/OrdersUnderOrdersPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
+            <state relative-caret-position="53">
+              <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#536#537#0" expanded="true" />
@@ -54,23 +61,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/configuration.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="17">
+              <caret line="1" column="2" selection-start-line="1" selection-end-line="1" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/orders/EditOrderStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+            <state relative-caret-position="112">
+              <caret line="119" column="58" lean-forward="true" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1769#1770#0" expanded="true" />
-                <element signature="e#1842#1843#0" expanded="true" />
+                <element signature="e#2169#2170#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,18 +130,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/Hooks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -144,6 +138,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>//div[@class='o_field_widget o_field_many2one o_required_modifier']//input[@class='o_input ui-autocomplete-input']</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -167,6 +166,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/briteerp/steps/Hooks.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/test/java/com/briteerp/runners/CukesRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/Hooks.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/editOrder.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/briteerp/pages/OrdersUnderOrdersPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/orders/EditOrderStepDefinitions.java" />
@@ -319,7 +319,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551690145110" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551701414180" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -428,34 +428,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CukesRunner - 2019.03.04 at 03h 25m 13s.xml">
+    <history-entry file="CukesRunner - 2019.03.04 at 06h 18m 22s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.03.04 at 03h 26m 46s.xml">
+    <history-entry file="CukesRunner - 2019.03.04 at 06h 19m 47s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.03.04 at 03h 28m 17s.xml">
+    <history-entry file="CukesRunner - 2019.03.04 at 06h 24m 20s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.03.04 at 03h 31m 10s.xml">
+    <history-entry file="CukesRunner - 2019.03.04 at 06h 27m 08s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.03.04 at 03h 32m 50s.xml">
+    <history-entry file="CukesRunner - 2019.03.04 at 06h 38m 08s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.03.04 at 03h 33m 45s.xml">
+    <history-entry file="CukesRunner - 2019.03.04 at 06h 48m 27s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.03.04 at 03h 36m 36s.xml">
+    <history-entry file="CukesRunner - 2019.03.04 at 06h 53m 51s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.03.04 at 03h 39m 21s.xml">
+    <history-entry file="CukesRunner - 2019.03.04 at 07h 01m 33s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.03.04 at 03h 43m 33s.xml">
+    <history-entry file="CukesRunner - 2019.03.04 at 07h 03m 34s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.03.04 at 03h 48m 07s.xml">
+    <history-entry file="CukesRunner - 2019.03.04 at 07h 07m 53s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -472,7 +472,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="95" y="134" width="314" height="378" id="Project" order="0" side_tool="true" weight="0.28825912" />
+      <window_info content_ui="combo" x="95" y="134" width="314" height="378" id="Project" order="0" side_tool="true" visible="true" weight="0.28825912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24939272" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -481,7 +481,7 @@
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32955465" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.40319717" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.8028419" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -537,13 +537,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -606,16 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/Hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -651,13 +634,6 @@
     <entry file="file://$PROJECT_DIR$/target/default-cucumber-reports/embedded1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/editOrder.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/utilities/BrowserUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -668,10 +644,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/Hooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="2" selection-start-line="1" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/pages/OrdersUnderOrdersPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
+        <state relative-caret-position="53">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#536#537#0" expanded="true" />
@@ -682,13 +675,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/orders/EditOrderStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+        <state relative-caret-position="112">
+          <caret line="119" column="58" lean-forward="true" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1842#1843#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/editOrder.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
         </state>
       </provider>
     </entry>

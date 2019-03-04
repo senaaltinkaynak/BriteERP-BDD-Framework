@@ -1,4 +1,3 @@
-
 Feature: As a Manager user should be able to edit order information
 
   Background:
@@ -14,30 +13,48 @@ Feature: As a Manager user should be able to edit order information
     Given User should select a specific order with "<Order Ref>" from the orders
     Then User should click the edit button to make changes
     And User should enter a value "<GuestNumber>" as a "Guests"
-    And User should save the changings
+    And User should save the changing
     When User should display the final value "<GuestNumber>"
 
     Examples:
-      | Order Ref              | GuestNumber  |
-      | Whole Foods Store/0005 |     888      |
-      | Whole Foods Store/0002 |     666      |
-      | Whole Foods Store/0006 |     777      |
+      | Order Ref              | GuestNumber |
+      | Whole Foods Store/0005 | 888         |
+      | Whole Foods Store/0002 | 666         |
+      | Whole Foods Store/0006 | 777         |
 
-  @wip
+
   Scenario Outline: User should be edit "Customer" value
 
     Given User should select a specific order with "<Order Ref>" from the orders
     Then User should click the edit button to make changes
     And User should clicks on "Customer" dropdown
     And User should select a customer from dropdown with "<Number>"
-    And User should save the changings
+    And User should save the changing
     When User should display the "<Number>"th customer information
 
     Examples:
       | Order Ref              | Number |
-      | Whole Foods Store/0001 |    2   |
-      | Whole Foods Store/0003 |    3   |
-      | DC store/0003          |    4   |
+      | Whole Foods Store/0001 | 2      |
+      | Whole Foods Store/0003 | 3      |
+      | DC store/0003          | 4      |
+
+  @wip
+  Scenario Outline: User should "Add an item"
+    Given User should select a specific order with "<Order Ref>" from the orders
+    Then User should click the edit button to make changes
+    And User should clicks on "Add an item" link and enter an item with these product names:
+      | ProductNameXXXXX |
+      | ProductNameYYYYY |
+      | ProductNameZZZZZ |
+
+    And User should save the changing
+    When User should display the "<Product>"
+
+    Examples:
+      | Order Ref              |
+      | Whole Foods Store/0001 |
+     # | Whole Foods Store/0002 |
+     # | Whole Foods Store/0003 |
 
   #Scenario Outline: User should be edit "\Table\" value
   #  Examples:

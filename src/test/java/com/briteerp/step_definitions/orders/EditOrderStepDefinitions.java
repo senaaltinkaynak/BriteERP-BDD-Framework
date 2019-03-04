@@ -2,22 +2,31 @@ package com.briteerp.step_definitions.orders;
 
 import com.briteerp.utilities.BrowserUtils;
 import com.briteerp.utilities.Pages;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.cucumber.datatable.DataTable;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+
+import java.security.Key;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class EditOrderStepDefinitions {
 
     Pages pages = new Pages();
     String customerSelected;
+    WebElement productAdd;
 
     @When("User should clicks on {string} link")
     public void user_should_clicks_on_link(String link) {
         if (link.equals("Point of Sale")) {
             pages.homePage().pointOfSaleLink.click();
-        }else if(link.equals("Orders")){
+        } else if (link.equals("Orders")) {
             pages.pointOfSalePage().ordersUnderOrders.click();
         }
     }
@@ -41,19 +50,20 @@ public class EditOrderStepDefinitions {
 
     @Then("User should enter a value {string} as a {string}")
     public void user_should_enter_a_value_as_a(String guestNumber, String guest) {
-        if(guest.equals("Guests")){
+        if (guest.equals("Guests")) {
             pages.ordersUnderOrdersPage().guestElement.clear();
             pages.ordersUnderOrdersPage().guestElement.sendKeys(guestNumber);
         }
     }
-    @Then("User should save the changings")
-    public void user_should_save_the_changings() {
+
+    @Then("User should save the changing")
+    public void user_should_save_the_changing() {
         pages.ordersUnderOrdersPage().saveElement.click();
     }
 
     @When("User should display the final value {string}")
     public void user_should_display_the_final_value(String guestNumber) {
-        Assert.assertEquals(pages.ordersUnderOrdersPage().editValue.getText(),guestNumber);
+        Assert.assertEquals(pages.ordersUnderOrdersPage().editValue.getText(), guestNumber);
     }
 
 
@@ -76,4 +86,37 @@ public class EditOrderStepDefinitions {
         Assert.assertEquals(pages.ordersUnderOrdersPage().customerDisplay.getText(),
                 customerSelected);
     }
+
+
+    @And("User should clicks on {string} link and enter an item with these product names:")
+    public void user_should_clicks_on_link_and_enter_an_item_with_these_product_names(String addItem, DataTable productTable) {
+
+        if (addItem.equals("Add an item")) {
+            List<String> products = productTable.asList();
+            for (String product : products) {
+
+                pages.ordersUnderOrdersPage().addElement.click();
+                pages.ordersUnderOrdersPage().productAdd.clear();
+                pages.ordersUnderOrdersPage().productAdd.sendKeys(product + Keys.ENTER);
+                pages.ordersUnderOrdersPage().productAdd.click();
+                BrowserUtils.wait(2);
+                pages.ordersUnderOrdersPage().productAdd.sendKeys(Keys.ENTER);
+                BrowserUtils.wait(3);
+                pages.ordersUnderOrdersPage().productAdd.click();
+            }
+        }
+    }
+
+
+    @When("User should display the {string}")
+    public void user_should_display_the(String product) {
+        boolean contains = false;
+        List<WebElement> products = pages.ordersUnderOrdersPage().products;
+        ArrayList<String> productNames = new ArrayList<>();
+        for(int i = 0; i < products.size(); i++){
+            productNames.add(products.get(i).getText());
+        }
+        Assert.assertTrue(productNames.contains(product));
+    }
+
 }
