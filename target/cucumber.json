@@ -1,0 +1,703 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3336205513,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to odoo homepage",
+            "match": {
+              "location": "LoginStepDefinitions.user_navigates_to_odoo_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 82519537,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should see the login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_see_the_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2983794759,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logs in as a manager",
+            "match": {
+              "location": "LoginStepDefinitions.user_logs_in_as_a_manager()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 997259517,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should clicks on \"Point of Sale\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Point of Sale\"",
+                  "offset": 22
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_clicks_on_link(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9469586320,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1257814,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenarioStart()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Testing edit button under orders functionality",
+        "description": "",
+        "id": "as-a-manager-user-should-be-able-to-edit-order-information.;testing-edit-button-under-orders-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 888785825,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 150330582,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should display \"Point of Sale\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Point of Sale\"",
+                  "offset": 20
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_display_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 395874898,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should clicks on \"Orders\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Orders\"",
+                  "offset": 22
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_clicks_on_link(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1620911463,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should select a specific order with \"Whole Foods Store/0005\" from the orders",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Whole Foods Store/0005\"",
+                  "offset": 41
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_select_a_specific_order_with_from_the_orders(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 981352091,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should click the edit button to make changes",
+            "match": {
+              "location": "EditOrderStepDefinitions.user_should_click_the_edit_button_to_make_changes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 334402419,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should enter a value \"888\" as a \"Guests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"888\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Guests\"",
+                  "offset": 37
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_enter_a_value_as_a(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 365503031,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should save the changings",
+            "match": {
+              "location": "EditOrderStepDefinitions.user_should_save_the_changings()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66982030,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User should display the final value \"888\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"888\"",
+                  "offset": 36
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_display_the_final_value(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2846372989,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to odoo homepage",
+            "match": {
+              "location": "LoginStepDefinitions.user_navigates_to_odoo_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36296991,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should see the login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_see_the_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3005992965,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logs in as a manager",
+            "match": {
+              "location": "LoginStepDefinitions.user_logs_in_as_a_manager()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 882135792,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should clicks on \"Point of Sale\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Point of Sale\"",
+                  "offset": 22
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_clicks_on_link(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3752529282,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 93866,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenarioStart()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Testing edit button under orders functionality",
+        "description": "",
+        "id": "as-a-manager-user-should-be-able-to-edit-order-information.;testing-edit-button-under-orders-functionality;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 926881644,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 59143731,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should display \"Point of Sale\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Point of Sale\"",
+                  "offset": 20
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_display_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 647034579,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should clicks on \"Orders\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Orders\"",
+                  "offset": 22
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_clicks_on_link(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1930056047,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should select a specific order with \"Whole Foods Store/0002\" from the orders",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Whole Foods Store/0002\"",
+                  "offset": 41
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_select_a_specific_order_with_from_the_orders(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1054476420,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should click the edit button to make changes",
+            "match": {
+              "location": "EditOrderStepDefinitions.user_should_click_the_edit_button_to_make_changes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 414674700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should enter a value \"666\" as a \"Guests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"666\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Guests\"",
+                  "offset": 37
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_enter_a_value_as_a(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 638849825,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should save the changings",
+            "match": {
+              "location": "EditOrderStepDefinitions.user_should_save_the_changings()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139866573,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User should display the final value \"666\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"666\"",
+                  "offset": 36
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_display_the_final_value(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2827433239,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to odoo homepage",
+            "match": {
+              "location": "LoginStepDefinitions.user_navigates_to_odoo_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15120226,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should see the login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_should_see_the_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3956559323,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logs in as a manager",
+            "match": {
+              "location": "LoginStepDefinitions.user_logs_in_as_a_manager()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1576200171,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should clicks on \"Point of Sale\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Point of Sale\"",
+                  "offset": 22
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_clicks_on_link(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4126553708,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 141227,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenarioStart()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Testing edit button under orders functionality",
+        "description": "",
+        "id": "as-a-manager-user-should-be-able-to-edit-order-information.;testing-edit-button-under-orders-functionality;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1043613478,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 65050509,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should display \"Point of Sale\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Point of Sale\"",
+                  "offset": 20
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_display_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 360184201,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should clicks on \"Orders\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Orders\"",
+                  "offset": 22
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_clicks_on_link(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1834712605,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should select a specific order with \"Whole Foods Store/0006\" from the orders",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Whole Foods Store/0006\"",
+                  "offset": 41
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_select_a_specific_order_with_from_the_orders(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1080657562,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should click the edit button to make changes",
+            "match": {
+              "location": "EditOrderStepDefinitions.user_should_click_the_edit_button_to_make_changes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 272912446,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should enter a value \"777\" as a \"Guests\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"777\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Guests\"",
+                  "offset": 37
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_enter_a_value_as_a(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 499953067,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should save the changings",
+            "match": {
+              "location": "EditOrderStepDefinitions.user_should_save_the_changings()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102222167,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User should display the final value \"777\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"777\"",
+                  "offset": 36
+                }
+              ],
+              "location": "EditOrderStepDefinitions.user_should_display_the_final_value(String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "As a Manager user should be able to edit order information.",
+    "description": "",
+    "id": "as-a-manager-user-should-be-able-to-edit-order-information.",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\editOrder.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
