@@ -11,15 +11,10 @@ import java.util.concurrent.TimeUnit;
 
 public class Hooks {
 
-
-
-
     @Before
     public void setup() {
         Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        Driver.getDriver().manage().window().maximize();
-
-    }
+        Driver.getDriver().manage().window().maximize();    }
 
     @Before
     public void beforeScenarioStart(){

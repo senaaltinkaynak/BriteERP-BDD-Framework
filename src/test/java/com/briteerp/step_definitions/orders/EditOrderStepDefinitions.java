@@ -1,6 +1,7 @@
 package com.briteerp.step_definitions.orders;
 
 import com.briteerp.utilities.BrowserUtils;
+import com.briteerp.utilities.Driver;
 import com.briteerp.utilities.Pages;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -108,15 +109,16 @@ public class EditOrderStepDefinitions {
     }
 
 
-    @When("User should display the {string}")
-    public void user_should_display_the(String product) {
-        boolean contains = false;
-        List<WebElement> products = pages.ordersUnderOrdersPage().products;
+    @When("User should display the products:")
+    public void user_should_display_the_products(DataTable productsTable) {
+        Driver.getDriver().navigate().refresh();
+        List<String> products = productsTable.asList();
         ArrayList<String> productNames = new ArrayList<>();
-        for(int i = 0; i < products.size(); i++){
-            productNames.add(products.get(i).getText());
-        }
-        Assert.assertTrue(productNames.contains(product));
-    }
+        List<WebElement> productsAdded = pages.ordersUnderOrdersPage().products;
 
+        for(int i = 0; i < productsAdded.size(); i++){
+            productNames.add(productsAdded.get(i).getText());
+        }
+        Assert.assertTrue(productNames.containsAll(products));
+    }
 }

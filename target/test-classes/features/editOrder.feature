@@ -48,13 +48,16 @@ Feature: As a Manager user should be able to edit order information
       | ProductNameZZZZZ |
 
     And User should save the changing
-    When User should display the "<Product>"
+    When User should display the products:
+      | ProductNameXXXXX |
+      | ProductNameYYYYY |
+      | ProductNameZZZZZ |
 
     Examples:
       | Order Ref              |
       | Whole Foods Store/0001 |
-     # | Whole Foods Store/0002 |
-     # | Whole Foods Store/0003 |
+      | Whole Foods Store/0002 |
+      | Whole Foods Store/0003 |
 
   #Scenario Outline: User should be edit "\Table\" value
   #  Examples:

@@ -48,7 +48,10 @@ Feature: As a Manager user should be able to edit order information
       | ProductNameZZZZZ |
 
     And User should save the changing
-   # When User should display the "<Product>"
+    When User should display the products:
+      | ProductNameXXXXX |
+      | ProductNameYYYYY |
+      | ProductNameZZZZZ |
 
     Examples:
       | Order Ref              |
