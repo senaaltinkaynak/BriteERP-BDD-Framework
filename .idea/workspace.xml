@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e95acfda-ada8-4fc6-a09c-a642294d168d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/orders/EditOrderStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/orders/EditOrderStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/editOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/editOrder.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded2.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerun.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/editOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/editOrder.feature" afterDir="false" />
-    </list>
+    <list default="true" id="e95acfda-ada8-4fc6-a09c-a642294d168d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/orders/EditOrderStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="115" column="59" selection-start-line="115" selection-start-column="59" selection-end-line="115" selection-end-column="59" />
+            <state relative-caret-position="43">
+              <caret line="113" column="48" lean-forward="true" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2104#2105#0" expanded="true" />
@@ -312,7 +300,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551753149274" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551753292686" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -421,9 +409,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CukesRunner - 2019.03.04 at 19h 43m 38s.xml">
-      <configuration name="CukesRunner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CukesRunner - 2019.03.04 at 19h 45m 21s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
@@ -451,6 +436,9 @@
     <history-entry file="CukesRunner - 2019.03.04 at 21h 30m 37s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CukesRunner - 2019.03.04 at 21h 33m 07s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -463,7 +451,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" x="95" y="134" width="314" height="378" id="Project" order="0" side_tool="true" visible="true" weight="0.28825912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24939272" />
@@ -474,12 +461,12 @@
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32955465" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.41918296" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.41918296" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.053285968" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5168739" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50040483" side_tool="true" weight="0.40852576" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3285968" />
@@ -673,8 +660,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/orders/EditOrderStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="115" column="59" selection-start-line="115" selection-start-column="59" selection-end-line="115" selection-end-column="59" />
+        <state relative-caret-position="43">
+          <caret line="113" column="48" lean-forward="true" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2104#2105#0" expanded="true" />
